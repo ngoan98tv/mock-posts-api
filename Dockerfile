@@ -13,4 +13,4 @@ COPY . .
 
 RUN npm install
 
-CMD [ "json-server", "--delay=$MOCK_DELAY", "--host=0.0.0.0", "--port=3000", "src/index.js" ]
+CMD [ "bash", "-c", "json-server --delay=$MOCK_DELAY --host=0.0.0.0 --port=3000 src/index.js" ]
