@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    image: tvngoan/mock-posts-api
+    ports:
+      - 3009:3000
